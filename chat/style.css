@@ -1,0 +1,84 @@
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+}
+
+.chat-zone {
+  width: 400px;
+  height: 420px;
+  background-color: darkgray;
+  padding: 24px;
+  word-wrap: break-word;
+}
+
+.msg-zone {
+  height: 300px;
+  overflow-y: auto;
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 4px;
+}
+
+.chat-zone > input {
+  width: 80%;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+}
+
+.chat-zone > input[type="text"]:focus {
+  background-color: lightblue;
+}
+
+.chat-zone > button {
+  background-color: dodgerblue;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  float: right;
+  cursor: pointer;
+}
+
+.msg {
+  font-size: 16px;
+  line-height: 25px;
+  display: block;
+  padding: 4px 6px;
+  margin-bottom: 8px;
+  word-wrap: break-word;
+  direction: ltr;
+  border-radius: 5px;
+  background-color: whitesmoke;
+}
+
+.incoming {
+  direction: rtl;
+  background-color: darkgray;
+  color: white;
+}
+
+.dot {
+  vertical-align: baseline;
+  text-align: center;
+  float: left;
+  font-weight: 600;
+  height: 25;
+  width: 25px;
+  background-color: dodgerblue;
+  border-radius: 50%;
+  margin-right: 5px;
+}
